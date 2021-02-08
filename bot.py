@@ -27,64 +27,6 @@ async def on_ready():
     print("Im online")
 
 
-@Bot.command()
-async def Swed(ctx):
-    await ctx.send(f"<@{273844890608336896}> is Cops Top1 player :?")
-
-@Bot.command()
-async def howlesbian(ctx):
-    author = ctx.message.author
-    await ctx.send(f"<@{author.id}> is {randint(0,101)}% lesbian")
-
-
-@Bot.command()
-@commands.has_permissions(administrator = True)
-async def mute (ctx, member: discord.Member):
-    mute_role = discord.utils.get(ctx.message.guild.roles, name = "Muted")
-    await member.add_roles(mute_role)
-    await ctx.send("Muted")
-
-
-@Bot.command()
-async def howgay(ctx):
-    author = ctx.message.author
-    await ctx.send(f"<@{author.id}> is {randint(0,101)}% gay")
-
-
-@Bot.command()
-async def allabout(ctx):
-    author = ctx.message.author
-    await ctx.send(f"<@{author.id}> is {randint(0,101)}% gay")
-    await ctx.send(f"<@{author.id}> накурений на  {randint(0,101)}% ")
-    await ctx.send(f"<@{author.id}> your penis is  {randint(-5,30)} cm ")
-    await ctx.send(f"<@{author.id}> is {randint(0,101)}%lesbian")
-    await ctx.send(f"<@{author.id}>, {choice(masiv)}")
-
-@Bot.command()
-async def mems(ctx):
-    await ctx.send("I dont have mems you gay smd")
-
-
-@Bot.command()
-async def howhigh(ctx):
-    author = ctx.message.author
-    await ctx.send(f"<@{author.id}> накурений на  {randint(0,101)}% ")
-
-
-@Bot.command()
-async def random(ctx):
-    await ctx.send("Danylo pidor!!")
-
-@Bot.command()
-async def aboutme(ctx):
-    author = ctx.message.author
-    await ctx.send(f"<@{author.id}>, {choice(masiv)}")
-
-@Bot.command()
-async def sizeofpenis(ctx):
-    author = ctx.message.author
-    await ctx.send(f"<@{author.id}> your penis is  {randint(-5,30)} cm ")
-
 
 @Bot.command()
 async def coronaworld(ctx):
@@ -96,10 +38,6 @@ async def coronaworld(ctx):
    await ctx.send(f"Covid 19 cases (in world) at the moment - {a}")
 
 
-@Bot.command()
-async def hello(ctx):
-    author = ctx.message.author
-    await ctx.send(f"Hello <@{author.id}> , i was made by Nazarko :D ")
 
 
 Bot.run('NzAyMDkwNDg3MTA3OTQ0NDg5.Xp6-uA.pDN40mvOZzHe27LXQCooDsHFQCE')
